@@ -10,7 +10,7 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">Ooopa {{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">Oo {{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
@@ -18,7 +18,7 @@ layout: default
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+            {{ post.title | escape }} {{post.argtest}}
           </a>
         </h3>
         {%- if site.show_excerpts -%}

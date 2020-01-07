@@ -3,3 +3,9 @@ jekyll new minimal-blog
 
 -- ver onde está o layout
 bundle show minima
+
+
+---------------------
+
+Includes: são os partials
+Layout: A estrutura básica
